@@ -17,19 +17,7 @@ request(url, (error, response, body) => {
       return
     }
     let fileSize = body.length;
-    log(`Downloaded and saved ${fileSize} to ${filePath}`);
+    log(`Downloaded and saved ${fileSize} bytes to ${filePath}`);
     //file written successfully
   })
 });
-
-
-
-// const content = 'Some content!'
-
-// fs.writeFile(filePath, fileContent, err => {
-//   if (err) {
-//     console.error(err)
-//     return
-//   }
-//   //file written successfully
-// })
